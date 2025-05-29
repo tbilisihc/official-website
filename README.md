@@ -1,1 +1,1 @@
-# official-website
+# Just some static pages
