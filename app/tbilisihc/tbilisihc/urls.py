@@ -1,3 +1,9 @@
+# Importing views.
+from django.urls import path, include
+
+
+
+
 """
 URL configuration for tbilisihc project.
 
@@ -19,4 +25,5 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include(website.urls), name="home")
 ]
