@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,8 +33,8 @@ export default function RootLayout({
         <header>
         
           <nav className="flex justify-between items-center">
-            <div className="text-2xl font-bold">Tbilisi Hack Club</div>
-            <ul className="flex space-x-4">
+            <div className="text-2xl font-bold">tbilisihc</div>
+            <ul className="flex space-x-4 mr-20">
               <li>
                 <Link href="/" className="text-white-700 hover:text-gray-700">
                   Home
@@ -45,7 +46,7 @@ export default function RootLayout({
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-white-700 hover:text-gray-700">
+                <Link href="/about" className="text-black-700 hover:text-gray-700">
                   About
                 </Link>
               </li>
