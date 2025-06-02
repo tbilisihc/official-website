@@ -33,13 +33,14 @@ export default function NewsPage() {
   const posts = getPosts();
 
   return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold mb-6">News</h1>
-      <ul className="space-y-4">
+    <div className="p-8 display flex flex-col items-center max-w-2xl mx-auto">
+      <h1 className="text-5xl font-bold mb-6">News</h1>
+      <ul className="space-y-10 mt-10">
         {posts.map((post) => (
           <li  key={post.slug}>
             <Link href={`/news/${post.slug}`} className="text-xl text-white-700 hover:text-600,  hover:underline">
-              {post.title} — <span className="text-gray-500">{post.date}</span>
+              {post.title} <br></br> 
+              <span className="text-gray-500 font-mono">{post.date}</span>
             </Link>
           </li>
         ))}

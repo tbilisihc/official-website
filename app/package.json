@@ -13,7 +13,8 @@
     "marked": "^15.0.12",
     "next": "15.3.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tailwind-typewriter": "^1.0.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -23,7 +24,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.3",
-    "tailwindcss": "^4",
+    "tailwindcss": "^4.1.8",
     "typescript": "^5"
   }
 }
