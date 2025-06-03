@@ -4,9 +4,14 @@ import matter from 'gray-matter';
 import { notFound } from 'next/navigation';
 import { marked } from 'marked';
 
-export type Params = Promise<{slug: string}>;
-export default async function News( props: {slug : Params}) {;
-    const { slug } = await props.slug;
+type Props = {
+  params: {
+    slug: string;
+  };
+};
+
+export default async function News({ params }: Props) {
+  const { slug } = params;
   const postPath = path.join(process.cwd(), 'posts', `${slug}.md`);
 
   if (!fs.existsSync(postPath)) {
