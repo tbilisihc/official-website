@@ -245,8 +245,8 @@ Use this space to list resources you find helpful and would like to give credit 
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/tbilisihc/tbilisihc.github.io.svg?style=for-the-badge
 [contributors-url]: https://github.com/tbilisihc/tbilisihc.github.io/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[forks-shield]: https://img.shields.io/github/forks/tbilisihc/tbilisihc.github.io.svg?style=for-the-badge
+[forks-url]: https://github.com/tbilisihc/tbilisihc.github.io/network/members
 [stars-shield]: https://img.shields.io/github/stars/tbilisihc/tbilisihc.github.io.svg?style=for-the-badge
 [stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
 [issues-shield]: https://img.shields.io/github/issues/tbilisihc/tbilisihc.github.io.svg?style=for-the-badge
