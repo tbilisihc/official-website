@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
+import {SideBar} from "./components/navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,8 +32,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <header>
-        
-          <nav className="flex justify-center items-center">
+          <SideBar />
+          {/* <nav className="flex justify-center items-center">
             
             <ul className="flex space-x-10 ">
               <li>
@@ -51,7 +52,7 @@ export default function RootLayout({
                 </Link>
               </li>
             </ul>          
-            </nav>  
+            </nav>   */}
             
         </header>
         {children}
