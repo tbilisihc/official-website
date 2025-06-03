@@ -4,8 +4,16 @@ import matter from 'gray-matter';
 import { notFound } from 'next/navigation';
 import { marked } from 'marked';
 
+
 export async function generateStaticParams() {
-  return
+    const postsDir = path.join(process.cwd(), 'posts');
+    const files = fs.readdirSync(postsDir);
+    const slugs = files.map((filename) => {
+      return {
+        slug: filename.replace(/\.md$/, ''),
+      };
+    });
+    return slugs;
 }
 
 export default async function News( props: {
