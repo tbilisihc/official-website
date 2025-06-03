@@ -4,11 +4,13 @@ import matter from 'gray-matter';
 import { notFound } from 'next/navigation';
 import { marked } from 'marked';
 
-export default function PostPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
+type Props = {
+  params: {
+    slug: string;
+  };
+};
+
+export default function News({ params }: Props) {
   const { slug } = params;
   const postPath = path.join(process.cwd(), 'posts', `${slug}.md`);
 
