@@ -10,7 +10,7 @@ type PostParams = {
     };
 };
 
-export default async function PostPage({ params }: PostParams) {
+export default function PostPage({ params }: PostParams) {
     const { slug } = params;
     const postPath = path.join(process.cwd(), 'posts', `${slug}.md`);
 
