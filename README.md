@@ -31,10 +31,10 @@
 <br />
 <div align="center">
   <a href="https://github.com/tbilisihc/tbilisihc.github.io">
-    <img src="new_logo.jpg" alt="Logo" width="80" height="80">
+    <img src="https://github.com/tbilisihc/assets/blob/main/banners/cropped_banner.png?raw=true" alt="Logo"  height="200">
   </a>
 
-  <h3 align="center">Tbilisi Hack Club website</h3>
+  <h3 align="center">Official tbilisihc website</h3>
 
   <p align="center">
     An awesome website you can manage!
