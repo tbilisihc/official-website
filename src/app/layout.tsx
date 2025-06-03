@@ -37,17 +37,17 @@ export default function RootLayout({
             <ul className="flex space-x-10 ">
               <li>
                 <Link href="/" className="text-white-700 hover:text-gray-700">
-                  <Image src ="/assets/home.png" alt= "Home" width={24} height={24} className="inline-block mr-1"/>
+                  Home
                 </Link>
               </li>
               <li>
                 <Link href="/news" className="text-white-700 hover:text-gray-700">
-                  <Image src ="/assets/news.png" alt= "News" width={24} height={24} className="inline-block mr-1"/>
+                  News
                 </Link>
               </li>
               <li>
                 <Link href="/about" className="text-black-700 hover:text-gray-700">
-                  <Image src ="/assets/about.png" alt= "About" width={24} height={24} className="inline-block mr-1"/>
+                  About
                 </Link>
               </li>
             </ul>          
