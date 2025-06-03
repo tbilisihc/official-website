@@ -18,6 +18,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Tbilisi Hack Club",
   description: "Non-profit organization for students in Tbilisi, Georgia",
+  
+  icons: "/favicon.ico",
 };
 
 export default function RootLayout({
@@ -26,6 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <>
+    
     <html lang="en">
       
       <body
@@ -69,5 +73,6 @@ export default function RootLayout({
         </footer>
       </body>
     </html>
+    </>
   );
 }
