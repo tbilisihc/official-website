@@ -5,11 +5,7 @@ import { notFound } from 'next/navigation';
 import { marked } from 'marked';
 
 export async function generateStaticParams() {
-  const posts = await fetch('https://.../news').then((res) => res.json())
- 
-  return posts.map((post) => ({
-    slug: post.slug,
-  }))
+  return
 }
 
 export default async function News( props: {
