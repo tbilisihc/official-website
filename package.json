@@ -16,6 +16,7 @@
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
     "tailwind-typewriter": "^1.0.1"
   },
   "devDependencies": {
