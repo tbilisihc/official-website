@@ -4,7 +4,7 @@ import "./globals.css";
 import Link from "next/link";
 import { IoHomeOutline, IoNewspaperOutline } from "react-icons/io5";
 import { FaRegQuestionCircle } from "react-icons/fa";
-
+import Image from "next/image";
 
 
 const geistSans = Geist({
@@ -31,51 +31,49 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
-    
     <html lang="en">
-      
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <header>
-          <nav className="flex justify-center items-center ">
-            
-            <ul className="flex space-x-10 ">
-              <li>
-                <Link href="/" className="text-white-700 hover:text-gray-500">
-                  <IoHomeOutline className="inline-block mr-2 text-3xl" />
-                </Link>
-              </li>
-              <li>
-                <Link href="/news" className="text-white-700 hover:text-gray-500">
-                  <IoNewspaperOutline className="inline-block mr-2 text-3xl" />
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-black-700 hover:text-gray-500">
-                  <FaRegQuestionCircle className="inline-block mr-2 text-3xl" />
-                </Link>
-              </li>
-            </ul>          
-            </nav>  
-            
-        </header>
-        {children}
-    <div>
-        
-    </div>
-        <footer className="text-center text-gray-500">
-          <p className="text-lg">
-              Want to improve this site? Go to our{" "}
-              <a className="underline" href="https://github.com/orgs/tbilisihc">
-                github
-              </a>
+    <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <header>
+        <nav className="bg-gray-900 shadow-md p-4">
+          <div className="relative container mx-auto flex items-center">
+            <Link href="/" className="flex items-center text-white text-2xl font-bold z-10">
+              <Image
+                src="/logo.png"
+                alt="Tbilisi Hack Club Logo"
+                width={40}
+                height={40}
+                className="inline-block mr-2"
+              />
+            </Link>
+            <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center space-x-8">
+              <Link href="/" className="flex items-center text-gray-200 hover:text-blue-300 transition-colors">
+                <IoHomeOutline className="text-lg sm:text-xl md:text-2xl mr-1" />
+                <span className="text-sm sm:text-base md:text-lg font-medium">Home</span>
+              </Link>
+              <Link href="/news" className="flex items-center text-gray-200 hover:text-blue-300 transition-colors">
+                <IoNewspaperOutline className="text-lg sm:text-xl md:text-2xl mr-1" />
+                <span className="text-sm sm:text-base md:text-lg font-medium">News</span>
+              </Link>
+              <Link href="/about" className="flex items-center text-gray-200 hover:text-blue-300 transition-colors">
+                <FaRegQuestionCircle className="text-lg sm:text-xl md:text-2xl mr-1" />
+                <span className="text-sm sm:text-base md:text-lg font-medium">About</span>
+              </Link>
+            </div>
+          </div>
+        </nav>
+      </header>
+      {children}
+      <div></div>
+      <footer className="text-center text-gray-500">
+        <p className="text-lg">
+          Want to improve this site? Go to our{" "}
+          <a className="underline" href="https://github.com/orgs/tbilisihc">
+            github
+          </a>
         </p>
-          <p>&copy; {new Date().getFullYear()} Tbilisi Hack Club</p>
-        </footer>
-      </body>
+        <p>&copy; {new Date().getFullYear()} Tbilisi Hack Club</p>
+      </footer>
+    </body>
     </html>
-    </>
   );
 }
