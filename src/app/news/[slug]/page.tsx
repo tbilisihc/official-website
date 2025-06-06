@@ -32,10 +32,10 @@ export default async function News( props: {
 
   return (
     <div className="p-8 max-w-2xl mx-auto">
-      <h1 className="text-4xl font-bold mb-4">{data.title}</h1>
-      <p className="text-gray-500 mb-6">{data.date}</p>
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">{data.title}</h1>
+      <p className="text-sm sm:text-base text-gray-400 mb-6">{data.date}</p>
       <p
-        className=""
+        className="prose prose-invert max-w-none text-sm sm:text-base"
         dangerouslySetInnerHTML={{ __html: html }}
       ></p>
     </div>

@@ -47,16 +47,16 @@ export default function RootLayout({
             </Link>
             <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center space-x-8">
               <Link href="/" className="flex items-center text-gray-200 hover:text-blue-300 transition-colors">
-                <IoHomeOutline className="text-2xl mr-1" />
-                <span className="text-lg font-medium">Home</span>
+                <IoHomeOutline className="text-lg sm:text-xl md:text-2xl mr-1" />
+                <span className="text-sm sm:text-base md:text-lg font-medium">Home</span>
               </Link>
               <Link href="/news" className="flex items-center text-gray-200 hover:text-blue-300 transition-colors">
-                <IoNewspaperOutline className="text-2xl mr-1" />
-                <span className="text-lg font-medium">News</span>
+                <IoNewspaperOutline className="text-lg sm:text-xl md:text-2xl mr-1" />
+                <span className="text-sm sm:text-base md:text-lg font-medium">News</span>
               </Link>
               <Link href="/about" className="flex items-center text-gray-200 hover:text-blue-300 transition-colors">
-                <FaRegQuestionCircle className="text-2xl mr-1" />
-                <span className="text-lg font-medium">About</span>
+                <FaRegQuestionCircle className="text-lg sm:text-xl md:text-2xl mr-1" />
+                <span className="text-sm sm:text-base md:text-lg font-medium">About</span>
               </Link>
             </div>
           </div>
