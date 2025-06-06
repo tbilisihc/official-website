@@ -4,7 +4,7 @@ import "./globals.css";
 import Link from "next/link";
 import { IoHomeOutline, IoNewspaperOutline } from "react-icons/io5";
 import { FaRegQuestionCircle } from "react-icons/fa";
-
+import Image from "next/image";
 
 
 const geistSans = Geist({
@@ -35,19 +35,30 @@ export default function RootLayout({
     <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
       <header>
         <nav className="bg-gray-900 shadow-md p-4">
-          <div className="container mx-auto flex items-center justify-center space-x-8">
-            <Link href="/" className="flex items-center text-gray-200 hover:text-blue-300 transition-colors">
-              <IoHomeOutline className="text-2xl mr-1" />
-              <span className="text-lg font-medium">Home</span>
+          <div className="relative container mx-auto flex items-center">
+            <Link href="/" className="flex items-center text-white text-2xl font-bold z-10">
+              <Image
+                src="/logo.png"
+                alt="Tbilisi Hack Club Logo"
+                width={40}
+                height={40}
+                className="inline-block mr-2"
+              />
             </Link>
-            <Link href="/news" className="flex items-center text-gray-200 hover:text-blue-300 transition-colors">
-              <IoNewspaperOutline className="text-2xl mr-1" />
-              <span className="text-lg font-medium">News</span>
-            </Link>
-            <Link href="/about" className="flex items-center text-gray-200 hover:text-blue-300 transition-colors">
-              <FaRegQuestionCircle className="text-2xl mr-1" />
-              <span className="text-lg font-medium">About</span>
-            </Link>
+            <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center space-x-8">
+              <Link href="/" className="flex items-center text-gray-200 hover:text-blue-300 transition-colors">
+                <IoHomeOutline className="text-2xl mr-1" />
+                <span className="text-lg font-medium">Home</span>
+              </Link>
+              <Link href="/news" className="flex items-center text-gray-200 hover:text-blue-300 transition-colors">
+                <IoNewspaperOutline className="text-2xl mr-1" />
+                <span className="text-lg font-medium">News</span>
+              </Link>
+              <Link href="/about" className="flex items-center text-gray-200 hover:text-blue-300 transition-colors">
+                <FaRegQuestionCircle className="text-2xl mr-1" />
+                <span className="text-lg font-medium">About</span>
+              </Link>
+            </div>
           </div>
         </nav>
       </header>
