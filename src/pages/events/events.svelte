@@ -1,30 +1,29 @@
 <script>
-	let Projects = [
-
+	let Events = [
+		{
+			Name: "Git and Github",
+			Date: "01/08/2025",
+			Description: `<p>Learn the basics of Git and Github, including how to create a repository, commit changes, and collaborate with others.</p>`,
+			Image: "https://medium.com/cs-note/git-and-github-for-beginners-i-tutorial-263caa01f9c3",
+		}
 	];
 </script>
 
 <div id="root">
 	<h1>Our Projects</h1>
 	<div id="grid">
-		{#each Projects as Project}
+		{#each Events as Event}
 			<div class="project-card">
-				<h2>{Project.Name}</h2>
-				<p>{@html Project.Description}</p>
+				<h2>{Event.Name}</h2>
+				<p>{@html Event.Description}</p>
 				<div class="image-gallery">
-					{#each Project.Images as Image}
-						<img
-							class="gallery-image"
-							alt="Project Tech Stack"
-							src="https://cdn.simpleicons.org/{Image}/grey"
-						/>
-					{/each}
+					<p>{@html Event.Date}</p>
 				</div>
 				<div class ="image-cover">
-				<img class="main-image" src={Project.Image} alt="Project" />
+				<img class="main-image" src={Event.Image} alt="Project" />
 				</div>
-				<a href={Project.Link} target="_blank"
-					><button class="ViewProject"> Open Project </button></a
+				<a href={Event.Link} target="_blank"
+					><button class="ViewProject"> Open Details </button></a
 				>
 			</div>
 		{/each}
