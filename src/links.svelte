@@ -20,8 +20,8 @@
 		
 	/>
 	<Link
-		link="#/Projects"
-		text="Projects"
+		link="#/events"
+		text="Events"
 		
 	/>
 	<Link
@@ -36,15 +36,15 @@
 		
 	/>
 	<LinkMob
-		link="#/aboutme"
+		link="#/about"
 		
 	/>
 	<LinkMob
-		link="#/contactme"
+		link="#/contact"
 		
 	/>
 	<LinkMob
-		link="#/Projects"
+		link="#/events"
 		
 	/>
 	<LinkMob

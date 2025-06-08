@@ -6,12 +6,14 @@
 	import Contactme from "./pages/contact-me/contactme.svelte";
 	import Nav from "./nav.svelte";
 	import Events from "./pages/events/events.svelte";
+	import EventDetails from "./pages/events/[slug]/slug.svelte"; // Assuming this is the correct path for the event details page
 
 	let routes = {
 		"/": Home,
 		"/about": Aboutme,
 		"/contact": Contactme,
 		"/events": Events,
+		"/events/*": EventDetails,
 	};
 </script>
 

@@ -10,7 +10,7 @@
     "deploy": "gh-pages -d dist -b prod"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "@sveltejs/vite-plugin-svelte": "^5.1.0",
     "@types/estree": "^1.0.6",
     "gh-pages": "^6.3.0",
     "svelte": "^5.20.2",

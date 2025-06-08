@@ -1,18 +1,14 @@
 <script>
-	let Events = [
-		{
-			Name: "Git and Github",
-			Date: "01/08/2025",
-			Description: `<p>Learn the basics of Git and Github, including how to create a repository, commit changes, and collaborate with others.</p>`,
-			Image: "https://medium.com/cs-note/git-and-github-for-beginners-i-tutorial-263caa01f9c3",
-		}
-	];
+	import { Event_list } from "./events";
+
+	
+	
 </script>
 
 <div id="root">
-	<h1>Our Projects</h1>
+	<h1>Upcoming Events</h1>
 	<div id="grid">
-		{#each Events as Event}
+	{#each Event_list.filter(event => !event.Past) as Event}
 			<div class="project-card">
 				<h2>{Event.Name}</h2>
 				<p>{@html Event.Description}</p>
@@ -22,11 +18,32 @@
 				<div class ="image-cover">
 				<img class="main-image" src={Event.Image} alt="Project" />
 				</div>
-				<a href={Event.Link} target="_blank"
+				<a href={"#/events/" + Event.Slug} target="_blank"
 					><button class="ViewProject"> Open Details </button></a
 				>
 			</div>
-		{/each}
+			{/each}
+			</div>
+			<br />
+		<h1>Past events</h1>
+		<div id="grid">
+			{#each Event_list.filter(event => event.Past) as Event}
+			<div class="project-card">
+				<h2>{Event.Name}</h2>
+				<p>{@html Event.Description}</p>
+				<div class="image-gallery">
+					<p>{@html Event.Date}</p>
+				</div>
+				<div class ="image-cover">
+				<img class="main-image" src={Event.Image} alt="Project" />
+				</div>
+				<a href={"#/events/" + Event.Slug} target="_blank"
+					><button class="ViewProject"> Open Details </button></a
+				>
+				</div>
+			
+			{/each}
+		
 	</div>
 </div>
 
@@ -54,7 +71,7 @@
 
 	.project-card {
 		border: 3px solid #333;
-		width: 250px;
+		max-width: 250px;
 		margin: 10px;
 		padding: 5px;
 		padding-bottom: 0px;
@@ -68,7 +85,7 @@
 	.gallery-image {
 		width: 30px;
 		height: 30px;
-		object-fit: cover;
+		object-fit: fill;
 	}
 	.image-cover {
 		display: flex;
