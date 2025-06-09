@@ -4,15 +4,13 @@
 
 <div id="root">
 	<div>
+		<div id = "hom"><img id = "logo" src= "https://avatars.githubusercontent.com/u/213840567?s=200&v=4" alt="logo">
 		<div id="text">
-			<h1 id="YoHeading">Tbilisi Hack Club</h1>
+			<!-- <h1 id="YoHeading">Tbilisi Hack Club</h1> -->
 			<h5 id="boutMe">
-				Non-profit organization<br/> Based in Tbilisi<img
-					id="whitespace"
-					src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/1feaf8b5942eca66775bc7ccadc8619cbf54cd07_1af71bf06d88b950.png"
-					alt="!"
-				/>
+				
 			</h5>
+		</div>
 		</div>
 		<hr />
 		<div id="links"><Links /></div>
@@ -25,6 +23,52 @@
 		place-content: center;
 		height: 100%;
 		margin: 0px;
+	}
+	#hom {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#logo {
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+	}
+	#logo:hover {
+		transform: scale(1.1);
+		transition: transform 0.3s ease;
+	}
+	#logo:active {
+		transform: scale(1);
+	}
+	#logo:focus {
+		outline: none;
+	}
+	#logo:focus-visible {
+		outline: 2px solid #242424;
+		outline-offset: 4px;
+	}
+	#logo:focus:not(:focus-visible) {
+		outline: none;
+	}
+	#logo:active:focus {
+		outline: 2px solid #242424;
+		outline-offset: 4px;
+	}
+	#logo:active:focus-visible {
+		outline: 2px solid #242424;
+		outline-offset: 4px;
+	}
+	#logo:active:focus:not(:focus-visible) {
+		outline: none;
+	}
+	#logo:focus-visible:hover {
+		outline: 2px solid #242424;
+		outline-offset: 4px;
+	}
+	#logo:focus:hover {
+		outline: 2px solid #242424;
+		outline-offset: 4px;
 	}
 
 	#text {

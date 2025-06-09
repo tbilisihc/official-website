@@ -2,7 +2,7 @@ import Slug from "./[slug]/slug.svelte";
 
 export let Event_list = [
 		{
-			Name: "Git and Github",
+			Name: "Git <br/> and Github",
 			Date: "01/08/2025",
 			Description: `<p>Learn the basics of Git and Github, including how to create a repository, commit changes, and collaborate with others.</p>`,
 			Image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*qwFrTMnFkcd3U9rFKwwacw.png",

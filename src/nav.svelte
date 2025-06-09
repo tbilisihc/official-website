@@ -4,7 +4,7 @@
 
 <div id="root">
 	<div id="me">
-		<h1 id="YoHeading">Tbilisi Hack Club</h1>
+		<img id = "logo" src="https://avatars.githubusercontent.com/u/213840567?s=200&v=4" alt="logo">
 	</div>
 	<Links />
 </div>
@@ -22,9 +22,6 @@
 			flex-direction: column;
 			align-items: center;
 		}
-		#YoHeading {
-			text-align: center;
-		}
 	}
 
 	#me {
@@ -32,11 +29,15 @@
 		margin: 10px;
 		align-items: center;
 	}
-	#YoHeading {
-		margin: 0px;
-		color: black;
-		font-size: 30px;
+	#logo {
+		max-width: 50px;
+		max-height: 50px;
+		border-radius: 50%;
+		transform: scale(2);
 	}
+	
+	
+	
 
 	hr {
 		width: 99%;

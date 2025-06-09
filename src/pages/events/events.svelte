@@ -10,11 +10,10 @@
 	<div id="grid">
 	{#each Event_list.filter(event => !event.Past) as Event}
 			<div class="project-card">
-				<h2>{Event.Name}</h2>
+				<h2>{@html Event.Name}</h2>
+				<p>{@html Event.Date}</p>
 				<p>{@html Event.Description}</p>
-				<div class="image-gallery">
-					<p>{@html Event.Date}</p>
-				</div>
+				
 				<div class ="image-cover">
 				<img class="main-image" src={Event.Image} alt="Project" />
 				</div>
@@ -92,9 +91,11 @@
 		justify-content: center;
 		align-items: center;
 		margin-bottom: 10px;
+		height: 146px;
+		width: 246px;
 	}
 	.main-image {
-		height: 146px;
+		max-height: 146px;
 		max-width: 246px;
 		text-align: center;
 		border: 2px solid #2e2e2e;
@@ -113,6 +114,6 @@
 	}
 	.ViewProject:hover {
 		background-color: #333;
-		transform: scale(1.05) rotateZ(-5deg);
+		transform: scale(1.05) rotateZ(-1deg);
 	}
 </style>
