@@ -14,9 +14,9 @@
 		logo="https://img.icons8.com/?size=100&id=1eCbkp60SQm7&format=png&color=000000"
 	/>
 	<Link
-		link="#/Projects"
-		text="Projects"
-		logo="https://img.icons8.com/?size=100&id=83172&format=png&color=000000"
+		link="#/Events"
+		text="Events"
+		logo="https://img.icons8.com/?size=100&id=5Mj2oJryMY4Q&format=png&color=000000"
 	/>
 	<Link
 		link="https://github.com/tbilisihc"
