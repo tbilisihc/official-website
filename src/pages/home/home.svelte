@@ -4,7 +4,7 @@
 
 <div id="root">
 	<div>
-		<div id = "hom"><img id = "logo" src= "https://avatars.githubusercontent.com/u/213840567?s=200&v=4" alt="logo">
+		<div id = "hom"><img id = "logo" src= "https://tbilisi.hackclub.com/assets/logo/ruby_logo.png" alt="logo">
 		<div id="text">
 			<!-- <h1 id="YoHeading">Tbilisi Hack Club</h1> -->
 			<h5 id="boutMe">
